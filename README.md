@@ -9,6 +9,7 @@ This layer extends the meta-raspberrypi BSP layer and builds a Linux image that 
 ## Hardware
 
 [Raspberry Pi Zero W](https://www.raspberrypi.org/products/raspberry-pi-zero-w/)
+
 [pHAT DAC](https://shop.pimoroni.com/products/phat-dac)
 
 ## Dependencies
