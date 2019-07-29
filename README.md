@@ -17,14 +17,14 @@ This layer extends the meta-raspberrypi BSP layer and builds a Linux image that 
 This layer depends on:
 
 * URI: git://git.yoctoproject.org/poky
-      * branch: warrior
+    * branch: warrior
 
 * URI: git://git.openembedded.org/meta-openembedded
-      * layers: meta-oe, meta-networking, meta-python
-      * branch: warrior
+    * layers: meta-oe, meta-networking, meta-python
+    * branch: warrior
 
 * URI: git://git.yoctoproject.org/meta-raspberrypi
-      * branch: warrior
+    * branch: warrior
 
 ## Quick Start
 
