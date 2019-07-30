@@ -12,6 +12,10 @@ This layer extends the meta-raspberrypi BSP layer and builds a Linux image that 
 
 [pHAT DAC](https://shop.pimoroni.com/products/phat-dac)
 
+## Pre-built images
+
+Latest pre-built image can be found from the [Releases](https://github.com/spietika/meta-rpi-bt-dac/releases) page. It can be directly flashed to a SD card.
+
 ## Dependencies
 
 This layer depends on:
