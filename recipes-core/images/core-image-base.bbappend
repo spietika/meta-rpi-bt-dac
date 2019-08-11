@@ -6,5 +6,6 @@ IMAGE_INSTALL += " \
         a2dp-agent \
         python \
         rpi-gpio \
+        bluez5-noinst-tools \
 	"
 
