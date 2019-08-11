@@ -4,5 +4,7 @@ IMAGE_INSTALL += " \
         bluez-alsa \
 	dac-config \
         a2dp-agent \
+        python \
+        rpi-gpio \
 	"
 
