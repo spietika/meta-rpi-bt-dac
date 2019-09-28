@@ -7,6 +7,7 @@ IMAGE_INSTALL += " \
         python \
         rpi-gpio \
         bluez5-noinst-tools \
+        expect \
 	"
 
 IMAGE_CMD_rpi-sdimg_append() {
