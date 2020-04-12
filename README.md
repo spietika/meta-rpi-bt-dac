@@ -43,3 +43,7 @@ This layer depends on:
 5. bitbake core-image-base
 6. dd to a SD card the generated sdimg file (build/tmp/deploy/images/raspberrypi0-wifi/core-image-base-raspberrypi0-wifi.rpi-sdimg)
 7. Boot your RPI.
+
+## License
+
+The source is released under the MIT license. See LICENSE for details. The binary releases contain third-party components in binary form. See the accompanied licenses archive for individual licenses.
