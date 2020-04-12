@@ -34,7 +34,7 @@ SECTION = "devel"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=3d7d6ac7e2dbd2505652dceb3acdf1fe"
 
-DEPENDS = "alsa-lib bluez5 glib-2.0 sbc"
+DEPENDS = "alsa-lib bluez5 glib-2.0 sbc fdk-aac"
 
 SRC_URI = "git://github.com/Arkq/bluez-alsa.git;branch=master;protocol=https;tag=v${PV} \
            file://bluealsa.sh"
@@ -43,6 +43,8 @@ S = "${WORKDIR}/git"
 
 INITSCRIPT_PARAMS = "start 21 2 3 4 5 ."
 INITSCRIPT_NAME = "bluealsa.sh"
+
+EXTRA_OECONF +="--enable-aac"
 
 inherit pkgconfig autotools update-rc.d
 
