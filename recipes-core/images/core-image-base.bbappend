@@ -4,7 +4,7 @@ IMAGE_INSTALL += " \
         bluez-alsa \
 	dac-config \
         a2dp-agent \
-        python \
+        python3 \
         rpi-gpio \
         bluez5-noinst-tools \
         expect \

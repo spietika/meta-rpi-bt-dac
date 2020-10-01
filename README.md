@@ -21,14 +21,14 @@ Latest pre-built image can be found from the [Releases](https://github.com/spiet
 This layer depends on:
 
 * URI: git://git.yoctoproject.org/poky
-    * branch: warrior
+    * branch: dunfell
 
 * URI: git://git.openembedded.org/meta-openembedded
     * layers: meta-oe, meta-networking, meta-python
-    * branch: warrior
+    * branch: dunfell
 
 * URI: git://git.yoctoproject.org/meta-raspberrypi
-    * branch: warrior
+    * branch: dunfell
 
 ## Quick Start
 
@@ -39,10 +39,11 @@ This layer depends on:
     * To remove unnecessary features, the following can also be added to local.conf:
     * `MACHINE_FEATURES_remove = "apm wifi screen touchscreen"`
     * `DISTRO_FEATURES_remove = "ipv4 ipv6 irda usbgadget usbhost wifi nfs zeroconf 3g nfc x11 wayland vulkan"`
-    * For read-only root filesystem, add `IMAGE_FEATURES += "read-only-rootfs"` to local.conf
-5. bitbake core-image-base
-6. dd to a SD card the generated sdimg file (build/tmp/deploy/images/raspberrypi0-wifi/core-image-base-raspberrypi0-wifi.rpi-sdimg)
-7. Boot your RPI.
+    * For read-only root filesystem, add `IMAGE_FEATURES += "read-only-rootfs"` to local.conf. When using read-only rootfs also `SERIAL_CONSOLES_CHECK = ""` needs to be set to local.conf.
+5. Add `IMAGE_FSTYPES_append = " rpi-sdimg"` to local.conf to produce ready-to-flash SD image
+6. bitbake core-image-base
+7. dd to a SD card the generated sdimg file (build/tmp/deploy/images/raspberrypi0-wifi/core-image-base-raspberrypi0-wifi.rpi-sdimg)
+8. Boot your RPI.
 
 ## License
 
