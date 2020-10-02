@@ -32,7 +32,7 @@ HOMEPAGE = "https://github.com/Arkq/bluez-alsa"
 SECTION = "devel"
 
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=3d7d6ac7e2dbd2505652dceb3acdf1fe"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=72d868d66bdd5bf51fe67734431de057"
 
 DEPENDS = "alsa-lib bluez5 glib-2.0 sbc fdk-aac"
 
