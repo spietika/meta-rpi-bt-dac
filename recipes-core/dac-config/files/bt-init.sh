@@ -8,7 +8,7 @@
 # Short-Description: Connect to Bluetooth module with UART and enable a2dp
 ### END INIT INFO
 
-/usr/bin/hciattach /dev/serial1 bcm43xx 921600 noflow -
+/usr/bin/hciattach /dev/serial1 bcm43xx 921600 flow -
 
 bluetoothctl power on
 bluetoothctl discoverable on
